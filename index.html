@@ -356,29 +356,58 @@
                     </a>
                 </div>
 
-                <form class="contacto-form">
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="email" placeholder="Correo electrónico" required>
-                    <input type="tel" placeholder="Teléfono">
-                    <textarea placeholder="Describe tu caso" required></textarea>
-                    <button type="submit">Enviar mensaje</button>
-                    <p class="texto-privacidad">
+                <form
+    class="contacto-form"
+    action="https://formsubmit.co/jslegal.ingenieria@gmail.com"
+    method="POST">
 
-                     <label class="check-privacidad">
+    <input
+        type="text"
+        name="nombre"
+        placeholder="Nombre"
+        required>
 
-                    <input type="checkbox" required>
+    <input
+        type="email"
+        name="correo"
+        placeholder="Correo electrónico"
+        required>
 
-                      He leído y acepto el
+    <input
+        type="tel"
+        name="telefono"
+        placeholder="Teléfono">
 
-                    <a href="legal/aviso-privacidad.html"
-                       target="_blank">
+    <textarea
+        name="mensaje"
+        placeholder="Describe tu caso"
+        required></textarea>
 
-                       Aviso de Privacidad
+    <input type="hidden" name="_subject" value="Nuevo contacto desde JS Legal & Ingeniería">
 
-                    </a>
+    <input type="hidden" name="_captcha" value="false">
 
-                    </label>
-                </form>
+    <input type="hidden" name="_template" value="table">
+
+    <input type="hidden" name="_next" value="https://jslegalingenieria-lgtm.github.io/jslegal-ingenieria/gracias.html">
+
+    <button type="submit">
+        Enviar mensaje
+    </button>
+
+    <p class="texto-privacidad">
+        <label class="check-privacidad">
+            <input type="checkbox" required>
+
+            He leído y acepto el
+
+            <a href="legal/aviso-privacidad.html" target="_blank">
+                Aviso de Privacidad
+            </a>
+        </label>
+    </p>
+
+</form>
             </div>
 
         </section>
